@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #103632;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0px auto;
+    
+    /* border: 2px solid black;   */
+    /* we will remoe it latter */
+}
+
+.apply-box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgb(141, 138, 138);
+
+    /*  make it center in container  */
+    margin:0px auto;  /* top me 0px and left right auto */
+    margin-top: 50px;
+
+    box-shadow: 10px 10px 5px orange;
+    border-radius: 10px;
+    
+
+    /* for area visibilty  */
+    /* border: 2px solid blue; */
+}
+
+.small-tittle{
+    font-size: medium;
+}
+
+.form-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+
+    gap: 20px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction:column;
+}
+
+label{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid rgb(217, 224, 224);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    /* border-color: #63f022;  */
+    outline: none; 
+    /* Remove default outline */
+    box-shadow: 0 0 5px #e74312; 
+    /* Add a shadow when input is focused */
+    
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content:space-between;
+}
+
+.button-container button{
+    color: white;
+    background-color: #04774d;
+
+    padding: 5px 15px;
+    border: transparent solid 2px;
+    border-radius: 5px;
+}
+
+.button-container button:hover{
+    background-color: rgb(83, 27, 27);
+
+   /* we can add transition effect after  */
+}
+
+textarea{
+    resize: none;
+    margin-top: 5px;
+}
+
+.textarea-control{
+    grid-column: 1/span 2;
+}
+
+.textarea-control textarea{
+    width: 100%;
+}
+
+
+@media (max-width:460px){
+    .textarea-control{
+        grid-column: 1/span 1;
+    }
+}
+
+
+
